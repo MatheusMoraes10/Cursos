@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Programa</title>
+    <style>
+        body{
+            background-color: lightblue;
+            color: white;
+            font: normal 25pt Arial;
+
+            /* Comentário em CSS */
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <!-- Comentário em HTML -->
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número'))
+        // o prompt retorna string tem que fazer o tratamento dele
+        var n2 = Number.parseInt(window.prompt('Digite outro número'))
+        // o + serve para concatenar e somar
+        // Para ter soma tenho que converter n1 e n2 para number
+        /* tem 3 maneiras de fazer
+        
+        pode ser direto na entrada da variavel
+        
+        1- Inteiro 
+        Number.parseint(n)
+        2- Real
+        Number.parseFloat(n)
+        3- Identifica automático
+        Number(n)
+        */
+
+        /* Para converter número para string tem 2 maneiras
+        
+        1- String(n)
+        2- n.toString()
+
+        */
+        var s = n1 + n2
+        window.prompt('A soma dos dois números digitados é: ' + String(s))
+
+        // lembrando que tamplate string é com crase ``
+
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
+    </script>
+</body>
+</html>
